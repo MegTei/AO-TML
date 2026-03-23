@@ -137,6 +137,7 @@ thead th.th-concern{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);c
 .rml-rec{background:#dcfce7;color:#15803d;border-color:#86efac;}
 .rml-cond{background:#fef9c3;color:#854d0e;border-color:#fde047;}
 .rml-limit{background:#fee2e2;color:#b91c1c;border-color:#fca5a5;}
+.rml-opt{background:#f3e8ff;color:#6b21a8;border-color:#c084fc;}
 
 /* EPD / FSC CHIPS */
 .chip{display:inline-block;padding:2px 7px;border-radius:5px;font-size:.66rem;font-weight:700;margin:1px;}
@@ -268,7 +269,7 @@ thead th.th-concern{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);c
     <div class="filter-group"><label>AO Recommendation</label>
       <select id="ct-rec" onchange="renderCombined()">
         <option value="">All</option>
-        <option value="rec-bench">&#10003; Recommended</option>
+        <option value="recommended">&#10003; Recommended</option>
         <option value="rec-rml">&#10003; New Recommended</option>
         <option value="ifsep">&#8652; If separated</option>
         <option value="limit">&#9888; Limit use</option>
@@ -485,8 +486,8 @@ thead th.th-concern{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);c
     <!-- CARD A -->
     <div class="pocket-card card-a">
       <div class="card-head">
-        <div class="card-eyebrow">Card A — For Designers/ Agencies/ Builders</div>
-        <div class="card-title">Before You Build</div>
+        <div class="card-eyebrow">Track 1</div>
+        <div class="card-title">Design Phase</div>
         <div class="card-subtitle">Design and material choices made upfront determine what's possible at bump-out. Lock these in the brief with builders.</div>
       </div>
       <div class="card-body">
@@ -536,29 +537,39 @@ thead th.th-concern{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);c
     <!-- CARD B -->
     <div class="pocket-card card-b">
       <div class="card-head">
-        <div class="card-eyebrow">Card B — For Builders &amp; Contractors</div>
-        <div class="card-title">Bump-Out Protocol</div>
+        <div class="card-eyebrow">Track 2</div>
+        <div class="card-title">Build &amp; Deconstruct Phase</div>
         <div class="card-subtitle">Many materials in waste streams are perfectly reusable and recyclable. It is our methods that turns them into waste. Follow this on pack-down.</div>
       </div>
       <div class="card-body">
         <div class="card-step">
           <div class="cs-icon"><svg width="18" height="18" style="color:#047857"><use href="#ico-bolt"/></svg></div>
-          <div><div class="cs-label">Step 1 — Materials Matter</div><div class="cs-text"><strong>Consult the AO Target Materials List (TML)</strong> — choose materials that deliver your reuse targets or, if not possible to reuse, materials that can be recycled. The AO TML can tell you what to look for.</div></div>
+          <div><div class="cs-label">Step 1 — Materials matter</div><div class="cs-text">Consult the AO Target Materials List (TML) — choose materials that deliver your reuse targets or if not possible to reuse, the material can be recycled. The AO TML can tell you what to look for.</div></div>
         </div>
         <div class="p-card-divider"></div>
         <div class="card-step">
           <div class="cs-icon"><svg width="18" height="18" style="color:#047857"><use href="#ico-wrench"/></svg></div>
-          <div><div class="cs-label">Step 2 — Methods Matter</div><div class="cs-text"><strong>Methods to mitigate waste.</strong> Many materials we use today are circular. It is the application of finishes and how they are handled at bump-out that turns them into waste. Mechanical connectors allow disassembly without damage, water-based paint, wood treatments and separation of materials create clean resource streams.</div></div>
+          <div><div class="cs-label">Step 2 — Methods matter</div><div class="cs-text">Methods to mitigate waste. Many materials we use today are circular. It is the application of finishes and how they are handled at bump-out that turns them into waste. Mechanical connectors allow disassembly without damage, water-based paint, wood treatments and separation of materials create clean resource streams.</div></div>
         </div>
         <div class="p-card-divider"></div>
         <div class="card-step">
           <div class="cs-icon"><svg width="18" height="18" style="color:#047857"><use href="#ico-clipboard"/></svg></div>
-          <div><div class="cs-label">Step 3 — Plan Before You Start</div><div class="cs-text"><strong>Read the deconstruction documentation.</strong> Plan effort and resources to pack down. Use the Design for Disassembly instructions, follow the specified steps to avoid damage.</div></div>
+          <div><div class="cs-label">Step 3 — Document modular and DfD</div><div class="cs-text">Documentation of the system and methods are essential — using the design illustrations build plans need to document how components work together so that contractors can assemble and dismantle with care.</div></div>
+        </div>
+        <div class="p-card-divider"></div>
+        <div class="card-step">
+          <div class="cs-icon"><svg width="18" height="18" style="color:#047857"><use href="#ico-box"/></svg></div>
+          <div><div class="cs-label">Step 4 — Disassembly effort</div><div class="cs-text">Plan for time and labour needed to pack down and separate waste.</div></div>
+        </div>
+        <div class="p-card-divider"></div>
+        <div class="card-step">
+          <div class="cs-icon"><svg width="18" height="18" style="color:#047857"><use href="#ico-clipboard"/></svg></div>
+          <div><div class="cs-label">Step 5 — Plan Before You Start</div><div class="cs-text">Read the deconstruction (DfD) documentation. Plan effort and resources to pack down. Use the Design for Disassembly instructions, follow the specified steps to avoid damage.</div></div>
         </div>
         <div class="p-card-divider"></div>
         <div class="card-step">
           <div class="cs-icon"><svg width="18" height="18" style="color:#047857"><use href="#ico-tag"/></svg></div>
-          <div><div class="cs-label">Step 4 — Track &amp; Tag</div><div class="cs-text"><strong>Record procurement costs and track reused assets</strong> — maintain a consistent material tracking log from specification stage through to bump-out and warehouse storage. Tag evergreen assets circular status, age and condition. This is key in measuring circularity and financial ROI outcomes.</div></div>
+          <div><div class="cs-label">Step 6 — Track &amp; Tag</div><div class="cs-text">Record procurement costs and track reused assets — maintain a consistent material tracking log from specification stage through to bump-out and warehouse storage. Tag evergreen assets with circular status, age and condition. This is key in measuring circularity and financial ROI outcomes.</div></div>
         </div>
       </div>
       <div class="card-prompt">
@@ -1032,7 +1043,7 @@ function populateT2(){
 function recFilter2(aoRec,filt){
   if(!filt)return true;
   var t=aoRec.toLowerCase();
-  if(filt==='rec-bench') return t.indexOf('recommended')>-1||t.indexOf('keep using')>-1;
+  if(filt==='recommended') return t.indexOf('recommended')>-1||t.indexOf('keep using')>-1;
   if(filt==='ifsep') return t.indexOf('use if')>-1||t.indexOf('if separated')>-1;
   if(filt==='limit') return t.indexOf('limit use')>-1;
   if(filt==='limitrml') return t.indexOf('no rml')>-1;
@@ -1195,7 +1206,7 @@ function populateT3(){
 function aoRecFilter3(aoRec,filt){
   if(!filt)return true;
   var t=aoRec.toLowerCase();
-  if(filt==='rec-rml') return t.indexOf('recommended')>-1;
+  if(filt==='rec-rml') return t.trim().toUpperCase()==='RECOMMENDED';
   if(filt==='conditional') return t.indexOf('conditional')>-1||t.indexOf('consider')>-1;
   /* rec-bench, ifsep, limit, limitrml — RML rows never match */
   return false;
